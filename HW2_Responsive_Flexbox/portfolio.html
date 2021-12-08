@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/reset.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar Starts Here -->
+
+    <nav class="navbar">
+      <div class="Logo">Your Name</div>
+
+      <ul class="nav-list" id="navi-list">
+        <!-- <li class="navbar-toggle"> <i class="fas fa-bars"></i> </li> -->
+        <li class="list-item">
+          <a class="list-item-a first" href="index.html">About</a>
+        </li>
+        <li class="list-item">
+          <a class="list-item-a second" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="list-item"><a class="list-item-a" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="menu" id="toggleButton">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+
+    <!-- Navbar Ends Here -->
+
+    <div class="container">
+      <div class="portfolio">
+
+        <h1>Portfolio</h1>
+
+        <div class="flex-container-portfolio">
+
+            <div class="album">
+                <h3 class="text">Hangman</h3>
+                <img src="/assets/images/technics-q-c-640-480-1.jpg" alt="">
+            </div>
+
+            <div class="album">
+                <h3 class="text">RPG Game</h3>
+                <img src="/assets/images/technics-q-c-640-480-2.jpg" alt="">
+            </div>
+
+            <div class="album">
+                <h3 class="text">Trivia Game</h3>
+                <img src="/assets/images/technics-q-c-640-480-5.jpg" alt="">
+            </div>
+
+            <div class="album">
+                <h3 class="text">Rudgers Info Widget</h3>
+                <img src="/assets/images/technics-q-c-640-480-7.jpg" alt="">
+            </div>
+
+            <div class="album">
+                <h3 class="text">Rock Paper Scissors</h3>
+                <img src="/assets/images/technics-q-c-640-480-9.jpg" alt="">
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+      <div class="right-content">
+        <h1>Connect with Me</h1>
+
+        <div class="flex-container">
+            <a href="https://mastanabdulkhaligli.github.io/">
+                <img src="/assets/images/github-128.png" alt="" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/mastan-abdulkhaligli-26b7a61a0/">
+                <img src="/assets/images/linkedin-128.png" alt="" />
+            </a>
+
+            <a href="https://stackoverflow.com/users/11952645/mastan-abdulkhaligli">
+                <img src="/assets/images/stackoverflow-128.png" alt="" />
+            </a>
+          
+          
+          
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer Starts Here -->
+    <footer>
+        <p>Copyright © 2016 Your Name</p>
+    </footer>
+    <!-- Footer Ends Here -->
+  </body>
+  <script>
+    const toggleButton = document.getElementById("toggleButton");
+    const naviList = document.getElementById("navi-list");
+
+    toggleButton.addEventListener("click", () => {
+      naviList.classList.toggle("active");
+    });
+  </script>
+</html>
